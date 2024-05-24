@@ -1,0 +1,23 @@
+.main-navigation {
+    height: 100%;
+    margin: 0px 10px;
+}
+
+.navigation-links {
+    display: flex;
+    flex-direction: row;
+    height: inherit;
+    vertical-align: middle;
+}
+
+.navigation-links > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navigation-item {
+    color: white;
+    height: 100%;
+    padding: 0 1vw;
+}
