@@ -1,23 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::before, *, *::after {
+    box-sizing: border-box;
+}
+
+#logo {
+    width: 9rem;
+    height: 100px;
+    background: url(images/bungie_logo_with_shield.svg) no-repeat 45%;
+    z-index: 2;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(0,0,0,0.8);
+}
+
 .main-navigation {
     height: 100%;
-    margin: 0px 10px;
+    display: flex;
+    flex: 1 1;
+    padding: 0px 1rem;
 }
 
 .navigation-links {
     display: flex;
-    flex-direction: row;
+    flex: 1 0 auto;
     height: inherit;
     vertical-align: middle;
+    color: #f5f5f5;
 }
 
-.navigation-links > * {
+.sign-in {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #f5f5f5;
+}
+
+.navigation-links > *, .sign-in > * {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .navigation-item {
+    cursor: pointer;
+    position: relative;
     color: white;
     height: 100%;
     padding: 0 1vw;
+}
+
+.navigation-item:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    background: yellow;
+    transition: width 0.2s ease, left 0.2s ease;
+}
+
+.navigation-item:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.play {
+    position: relative;
+    color: white;
+    background: rgba(183, 140, 37, .8);
+    display: inline-flex;
+    align-self: center;
+    margin-left: auto;
+    margin-right: 1rem;
+    padding: 6px 12px;
+}
+
+.play:hover {
+    background: #B78C25;
+}
+
+i {
+    font-size: 2rem;
+    padding: 0 0.35rem;
 }
