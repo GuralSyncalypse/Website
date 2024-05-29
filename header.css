@@ -136,7 +136,6 @@ i:hover {
     color: orange;
 }
 
-
 /* For WebKit browsers (Chrome, Safari) */
 input[type="text"]::-webkit-search-cancel-button {
     -webkit-appearance: none;

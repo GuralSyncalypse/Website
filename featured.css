@@ -1,0 +1,21 @@
+.title {
+    border-top: 2px solid blueviolet;
+    font-weight: bold;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+}
+
+.title span {
+    color: whitesmoke;
+    background-color: blueviolet;
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+}
+
+.category {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto, minmax(1fr, 9rem));
+    column-gap: 0.375rem;
+    background-color: yellow;
+}
