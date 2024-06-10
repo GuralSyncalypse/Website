@@ -1,0 +1,44 @@
+[
+    {
+        "title": "Fantastic Haven: Prologue",
+        "description": "d1",
+        "price": "FREE",
+        "imgSource": "container-1/images/item-1.jpg"
+    },
+    {
+        "title": "The Big Catch: Tacklebox",
+        "description": "d1",
+        "price": "FREE",
+        "imgSource": "container-1/images/item-2.jpg"
+    },
+    {
+        "title": "Kamaru: A Frog Refuge",
+        "description": "d1",
+        "price": "$17.99",
+        "imgSource": "container-1/images/item-3.jpg"
+    },
+    {
+        "title": "100 Aliens Cats",
+        "description": "d1",
+        "price": "FREE",
+        "imgSource": "container-1/images/item-4.jpg"
+    },
+    {
+        "title": "Nightmare Kart",
+        "description": "d1",
+        "price": "FREE",
+        "imgSource": "container-1/images/item-5.jpg"
+    },
+    {
+        "title": "Megaloot: Prelude",
+        "description": "d1",
+        "price": "FREE",
+        "imgSource": "container-1/images/item-6.jpg"
+    },
+{
+        "title": "Nine Sols",
+        "description": "d1",
+        "price": "$29.99",
+        "imgSource": "container-1/images/item-7.jpg"
+    }
+]

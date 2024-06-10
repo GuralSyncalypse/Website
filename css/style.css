@@ -7,11 +7,24 @@
     box-sizing: border-box;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+i {
+    font-size: 2rem;
+    padding: 0 0.35rem;
+}
+
 .item-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex: 1 0 auto;
+}
+
+.item-container {
+    cursor: pointer;
 }
 
 .item {
@@ -39,7 +52,8 @@
 .item-info span {
     color: white;
     font-weight: bold;
-    text-decoration: underline;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 1);
 }
 
 .item-info button {
@@ -53,8 +67,7 @@
 }
 
 .item-info button:hover {
-    padding: 5px 10px;
-    border-radius: 0.5rem;
+    color: yellow;
 }
 
 .item:hover > img {

@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Ori and the Will of the Wisps",
+        "description": "d1",
+        "price": "$29.99",
+        "imgSource": "container-2/images/item-1.jpg"
+    },
+    {
+        "title": "Ori and the Blind Forest",
+        "description": "d1",
+        "price": "$29.99",
+        "imgSource": "container-2/images/item-2.jpg"
+    },
+    {
+        "title": "Killing Floor",
+        "description": "d1",
+        "price": "$19.99",
+        "imgSource": "container-2/images/item-3.jpg"
+    },
+    {
+        "title": "Killing Floor 2",
+        "description": "d1",
+        "price": "$29.99",
+        "imgSource": "container-2/images/item-4.jpg"
+    }
+]

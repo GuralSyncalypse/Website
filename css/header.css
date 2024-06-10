@@ -4,21 +4,11 @@
     justify-content: center;
     width: 13rem;
     height: 100px;
-    background: url(images/logo.png) no-repeat 45%;
+    background: url("/images/logo.png") no-repeat 45%;
     background-size: cover;
     z-index: 2;
     margin-right: 20px;
     vertical-align: middle;
-}
-
-a {
-    cursor: pointer;
-    text-decoration: none;
-}
-
-i {
-    font-size: 2rem;
-    padding: 0 0.35rem;
 }
 
 header {
@@ -35,6 +25,8 @@ header {
     display: flex;
     flex: 1 1;
     padding: 0px 1rem;
+    color: whitesmoke;
+    font-weight: bold;
 }
 
 .navigation-list > .sign-in {
@@ -47,7 +39,6 @@ header {
     flex: 1 0 auto;
     height: inherit;
     vertical-align: middle;
-    color: whitesmoke;
 }
 
 .navigation-list {
@@ -58,7 +49,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: whitesmoke;
 }
 
 .navigation-links > *, .sign-in > * {
@@ -70,11 +60,60 @@ header {
 .navigation-item {
     cursor: pointer;
     position: relative;
-    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
     text-transform: uppercase;
     font-weight: bold;
     height: 100%;
     padding: 0 1vw;
+}
+
+.navigation-item > .nav-drop, .sign-in > * > .nav-drop {
+    width: 230px;
+    height: auto;
+    display: none;
+    position: absolute;
+    top: 100%;
+    z-index: 1;
+}
+
+.sign-in > * > .nav-drop {
+    right: 7%;
+}
+
+.navigation-item:hover > .nav-drop {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-drop a {
+    position: relative;
+    color: whitesmoke;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: blueviolet;
+    text-decoration: none;
+    display: block;
+    overflow: hidden;
+}
+
+.nav-drop a:hover {
+    width: 110%;
+}
+
+.nav-drop a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: yellow;
+    transition: width 0.3s ease;
+}
+
+.nav-drop a:hover::before {
+    width: 100%; /* Expand the border to full width on hover */
 }
 
 .navigation-item:after {
@@ -128,7 +167,15 @@ input[type="search"]:focus {
     font-size: 1.5rem;
 }
 
-.menu > i{
+.sign-in {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.menu > i {
     cursor: pointer;
 }
 
@@ -166,5 +213,9 @@ input[type="search"]::-webkit-search-decoration {
 
     .navigation-list, .navigation-list > .sign-in {
         display: flex;
+    }
+
+    .navigation-list > .sign-in > * > .nav-drop {
+        display: none;
     }
 }
