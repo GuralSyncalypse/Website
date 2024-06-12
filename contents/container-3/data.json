@@ -1,0 +1,50 @@
+[
+    {
+        "title": "The Final Shape + Annual Pass",
+        "description": "d1",
+        "price": "$99.99",
+        "imgSource": "contents/container-3/images/item-1.jpg"
+    },
+    {
+        "title": "The Final Shape",
+        "description": "d1",
+        "price": "$49.99",
+        "imgSource": "contents/container-3/images/item-2.jpg"
+    },
+    {
+        "title": "The Final Shape Annual Pass Upgrade",
+        "description": "d1",
+        "price": "$49.99",
+        "imgSource": "contents/container-3/images/item-3.jpg"
+    },
+    {
+        "title": "Legacy Collection (2024)",
+        "description": "d1",
+        "price": "$69.99",
+        "imgSource": "contents/container-3/images/item-4.jpg"
+    },
+    {
+        "title": "Beyond Light Pack",
+        "description": "d1",
+        "price": "$2.99",
+        "imgSource": "contents/container-3/images/item-5.jpg"
+    },
+    {
+        "title": "The 30th Anniversary Pack",
+        "description": "d1",
+        "price": "$24.99",
+        "imgSource": "contents/container-3/images/item-6.jpg"
+    },
+    {
+        "title": "Shadowkeep Pack",
+        "description": "d1",
+        "price": "$19.99",
+        "imgSource": "contents/container-3/images/item-7.jpg"
+    },
+    {
+        "title": "Lightfall",
+        "description": "d1",
+        "price": "$29.99",
+        "imgSource": "contents/container-3/images/item-8.jpg"
+    }
+]

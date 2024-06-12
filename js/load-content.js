@@ -1,9 +1,9 @@
 var containers = document.querySelectorAll('.item-container');
-let indexes = [0, 0];
+let indexes = new Array(containers.length).fill(0);
 
 function load(container, index, offset)
 {
-    fetch(`container-${index + 1}/data.json`)
+    fetch(`contents/container-${index + 1}/data.json`)
     .then(response => response.json())
     .then(data => {
         if (offset < 0) {
@@ -18,7 +18,6 @@ function load(container, index, offset)
             const info = item.querySelector('.item-info');
             
             const dataIndex = (itemIndex + offset) % data.length;
-
             const title = data[dataIndex].title; // Not used.
             const price = data[dataIndex].price;
             const imgSource = data[dataIndex].imgSource;
@@ -34,7 +33,7 @@ function load(container, index, offset)
 }
 
 // Các events.
-for (let i = 1; i <= 2; i++) {
+for (let i = 1; i <= containers.length; i++) {
     document.getElementById(`left-${i}`).addEventListener('click', function() {
         updateIndexes(i, -1);
     });
@@ -52,6 +51,7 @@ function updateIndexes(index, change) {
 // Tải contents.
 document.addEventListener('DOMContentLoaded', function() {
     containers.forEach(function(container, index) {
+        console.log(container);
         load(container, index, 0);
     });
 });
